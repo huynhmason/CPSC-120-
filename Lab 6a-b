@@ -1,0 +1,130 @@
+//// Lab 6a.cpp : Defines the entry point for the console application.
+////
+//
+//#include "stdafx.h"
+//#include <iostream>
+//using namespace std; 
+//
+//void printMessage();
+//int tripleIt(int someNum);
+//
+///*****        main        *****/
+//int main()
+//{
+//  int value = 2; 
+//
+//  cout << "Hello from main.\n"; 
+//  printMessage();
+//
+//  cout << "\nValue returned by tripleIt is " << tripleIt(value) << endl; 
+//  cout << "In main value now is " << value << endl << endl; 
+//
+//  value = tripleIt(value); 
+//  cout << "In main value now is " << value << endl; 
+//
+//  value = tripleIt(value);
+//  cout << "In main value now is " << value << endl << endl;
+//
+//  cout << "Goodbye from main.\n"; 
+//  system("Pause");
+//    return 0;
+//}
+///*****        printMessage        *****/
+//void printMessage()
+//{
+//  cout << "Hello from PrintMessage.\n";
+//}
+//
+///*****        tripleIt        *****/
+//int tripleIt(int someNum)
+//{
+//  return someNum * someNum * someNum;
+//}
+ 
+// Lab 6b.cpp 
+//#include "stdafx.h"
+//#include <iostream> 
+//#include <iomanip>
+//using namespace std;
+//
+//void displayMenu();
+//void findSquareArea();
+//void findCircleArea(); 
+//void findTriangleArea(); 
+//
+//const double PI = 3.14159;
+//
+//int main()
+//{
+//  int choice;
+//  
+//  {
+//      displayMenu();
+//      cin >> choice;
+//      while (choice < 1 || choice > 4)
+//      {
+//          cout << "Please enter 1, 2, 3, or 4.\n";
+//          cin >> choice;
+//      }
+//      {
+//          if (choice == 1)
+//          {
+//              findSquareArea();
+//          }
+//          else if (choice == 2)
+//          {
+//              findCircleArea();
+//          }
+//          else if (choice == 3)
+//          {
+//              findTriangleArea();
+//          }
+//          else if (choice == 4)
+//          {
+//              exit(0);
+//          }
+//      }
+//  }
+//  system("pause");
+//  return 0;
+//}
+///*****        displayMenu     *****/ 
+//void displayMenu()
+//{
+//  cout << "Program to calculate areas of objects\n\n";
+//
+//  cout << setw(20) << "1 -- square\n";
+//  cout << setw(20) << "2 -- circle\n";
+//  cout << setw(28) << "3 -- right triangle\n";
+//  cout << setw(18) << "4 -- quit\n";
+//
+//}
+//
+///*****        findSquareArea      *****/
+//void findSquareArea()
+//{
+//  double side;
+//
+//  cout << "Side of square: ";
+//  cin >> side;
+//  cout << "\nArea of square: " << pow(side, 2) << endl;
+//}
+//
+///*****        findCircleArea      *****/
+//void findCircleArea()
+//{
+//  double radius;
+//  cout << "Radius of circle: ";
+//  cin >> radius;
+//  cout << "Area = " << PI * pow(radius, 2) << endl;
+//}
+//
+///*****        findTriangleArea        *****/
+//void findTriangleArea()
+//{
+//  double base, height; 
+//  cout << "Enter base and height of triangle separated by a space. ";
+//  cin >> base >> height;
+//  cout << "Area = " << (base * height) / 2 << endl;
+//}
+ 
